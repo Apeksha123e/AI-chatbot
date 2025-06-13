@@ -1,3 +1,9 @@
 
 streamlit
 google-generativeai
+python-docx
+PyMuPDF 
+langdetect 
+fpdf 
+gTTS
+
