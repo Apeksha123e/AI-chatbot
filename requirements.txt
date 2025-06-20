@@ -6,4 +6,8 @@ PyMuPDF
 langdetect 
 fpdf 
 gTTS
+streamlit-authenticator 
+bcrypt 
+pyyaml
+
 
