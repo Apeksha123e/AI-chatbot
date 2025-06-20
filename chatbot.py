@@ -8,7 +8,7 @@ import fitz  # PyMuPDF
 from langdetect import detect
 from io import BytesIO
 from fpdf import FPDF
-import pyttsx3
+# import pyttsx3
 
 
 st.set_page_config(page_title="AI Chatbot + PDF Assistant", layout="wide")
@@ -158,10 +158,10 @@ elif tab == "📄 Summarize PDF":
         if st.session_state.summary:
             st.markdown("### 📝 Summary")
             st.code(st.session_state.summary)
-            if st.button("🔊 Read Aloud"):
-                engine = pyttsx3.init()
-                engine.say(st.session_state.summary)
-                engine.runAndWait()
+            # if st.button("🔊 Read Aloud"):
+            #     engine = pyttsx3.init()
+            #     engine.say(st.session_state.summary)
+            #     engine.runAndWait()
             if st.button("📤 Export Summary PDF"):
                 pdf = FPDF()
                 pdf.add_page()
